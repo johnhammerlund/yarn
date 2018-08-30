@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import yarn
 
 guard CommandLine.arguments.count == 2 else {
     fatalError("A path to a single property list must be provided")

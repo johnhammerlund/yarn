@@ -8,11 +8,13 @@
 
 import Foundation
 
-final class SwiftSecretsFileGenerator: SecretsFileGenerator {
+public final class SwiftSecretsFileGenerator: SecretsFileGenerator {
 
     private let className = "Secrets"
 
-    func generate(secrets: [MaskedSecret]) -> String {
+    public init() {}
+
+    public func generate(secrets: [MaskedSecret]) -> String {
         let computedProperties = secrets.map(generateComputedProperty(secret:)).joined(separator: "\n")
         return """
         import Foundation

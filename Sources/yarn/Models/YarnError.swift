@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum YarnError: Error {
+public enum YarnError: Error {
     case badKeyEncoding
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SecretsFileGenerator {
+public protocol SecretsFileGenerator {
     func generate(secrets: [MaskedSecret]) -> String
 }

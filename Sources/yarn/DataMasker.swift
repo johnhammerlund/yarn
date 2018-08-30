@@ -9,10 +9,9 @@
 import Foundation
 import Security
 
-final class DataMasker {
+public final class DataMasker {
 
-    static func mask(key: String, data: Data) -> MaskedSecret {
-//        let keySpace = data.count >> 1
+    public static func mask(key: String, data: Data) -> MaskedSecret {
         let keySpace = 256
 
         var buffer = [UInt8](repeating: 0, count: keySpace)
@@ -41,7 +40,7 @@ final class DataMasker {
         return MaskedSecret(name: key, data: maskedData, keySpace: keySpace, maskKey: maskKey, secretPositions: keyPositions)
     }
 
-    static func unmask(secret: MaskedSecret) -> Data {
+    public static func unmask(secret: MaskedSecret) -> Data {
         let maskedBytes = secret.data.map { $0 }
         let maskKeyBytes = secret.maskKey.map { $0 }
 

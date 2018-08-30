@@ -21,13 +21,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1B5B9FC02138B53F00003F79 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B9FBF2138B53F00003F79 /* main.swift */; };
+		1B5B9FC22138B54E00003F79 /* yarn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "yarn::yarn::Product" /* yarn.framework */; };
 		OBJ_30 /* DataMasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DataMasker.swift */; };
 		OBJ_31 /* Array+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Array+Random.swift */; };
 		OBJ_32 /* MaskedSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MaskedSecret.swift */; };
 		OBJ_33 /* YarnError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* YarnError.swift */; };
 		OBJ_34 /* SecretsFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* SecretsFileGenerator.swift */; };
 		OBJ_35 /* SwiftSecretsFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* SwiftSecretsFileGenerator.swift */; };
-		OBJ_36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* main.swift */; };
 		OBJ_43 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_54 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XCTestManifests.swift */; };
 		OBJ_55 /* yarnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* yarnTests.swift */; };
@@ -51,13 +52,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B5B9FB52138B50500003F79 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B5B9FB72138B50500003F79 /* yarn-exec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "yarn-exec"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5B9FBF2138B53F00003F79 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Array+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Random.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* MaskedSecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedSecret.swift; sourceTree = "<group>"; };
 		OBJ_14 /* YarnError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarnError.swift; sourceTree = "<group>"; };
 		OBJ_15 /* SecretsFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsFileGenerator.swift; sourceTree = "<group>"; };
 		OBJ_16 /* SwiftSecretsFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSecretsFileGenerator.swift; sourceTree = "<group>"; };
-		OBJ_17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_20 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_21 /* yarnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yarnTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -67,6 +81,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B5B9FB42138B50500003F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5B9FC22138B54E00003F79 /* yarn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -85,6 +107,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5B9FBE2138B53400003F79 /* yarn-exec */ = {
+			isa = PBXGroup;
+			children = (
+				1B5B9FBF2138B53F00003F79 /* main.swift */,
+			);
+			name = "yarn-exec";
+			path = "Sources/yarn-exec";
+			sourceTree = "<group>";
+		};
+		1B5B9FC12138B54E00003F79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +163,7 @@
 			children = (
 				"yarn::yarnTests::Product" /* yarnTests.xctest */,
 				"yarn::yarn::Product" /* yarn.framework */,
+				1B5B9FB72138B50500003F79 /* yarn-exec */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -136,6 +175,7 @@
 				OBJ_7 /* Sources */,
 				OBJ_18 /* Tests */,
 				OBJ_22 /* Products */,
+				1B5B9FC12138B54E00003F79 /* Frameworks */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -143,6 +183,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1B5B9FBE2138B53400003F79 /* yarn-exec */,
 				OBJ_8 /* yarn */,
 			);
 			name = Sources;
@@ -156,7 +197,6 @@
 				OBJ_12 /* Models */,
 				OBJ_15 /* SecretsFileGenerator.swift */,
 				OBJ_16 /* SwiftSecretsFileGenerator.swift */,
-				OBJ_17 /* main.swift */,
 			);
 			name = yarn;
 			path = Sources/yarn;
@@ -165,6 +205,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1B5B9FB62138B50500003F79 /* yarn-exec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B5B9FBB2138B50500003F79 /* Build configuration list for PBXNativeTarget "yarn-exec" */;
+			buildPhases = (
+				1B5B9FB32138B50500003F79 /* Sources */,
+				1B5B9FB42138B50500003F79 /* Frameworks */,
+				1B5B9FB52138B50500003F79 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yarn-exec";
+			productName = "yarn-exec";
+			productReference = 1B5B9FB72138B50500003F79 /* yarn-exec */;
+			productType = "com.apple.product-type.tool";
+		};
 		"yarn::SwiftPMPackageDescription" /* yarnPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "yarnPackageDescription" */;
@@ -218,7 +275,15 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					1B5B9FB62138B50500003F79 = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 88WF48V9FA;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "yarn" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -236,11 +301,20 @@
 				"yarn::SwiftPMPackageDescription" /* yarnPackageDescription */,
 				"yarn::yarnPackageTests::ProductTarget" /* yarnPackageTests */,
 				"yarn::yarnTests" /* yarnTests */,
+				1B5B9FB62138B50500003F79 /* yarn-exec */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B5B9FB32138B50500003F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5B9FC02138B53F00003F79 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -251,7 +325,6 @@
 				OBJ_33 /* YarnError.swift in Sources */,
 				OBJ_34 /* SecretsFileGenerator.swift in Sources */,
 				OBJ_35 /* SwiftSecretsFileGenerator.swift in Sources */,
-				OBJ_36 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +361,115 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1B5B9FBC2138B50500003F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88WF48V9FA;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1B5B9FBD2138B50500003F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 88WF48V9FA;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		OBJ_27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,6 +629,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B5B9FBB2138B50500003F79 /* Build configuration list for PBXNativeTarget "yarn-exec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B5B9FBC2138B50500003F79 /* Debug */,
+				1B5B9FBD2138B50500003F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "yarn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

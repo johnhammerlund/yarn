@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MaskedSecret {
+public struct MaskedSecret {
 
     let name: String
     let data: Data
