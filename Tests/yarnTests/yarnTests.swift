@@ -12,6 +12,12 @@ final class yarnTests: XCTestCase {
         XCTAssertEqual(data, unmaskedData)
     }
 
+    func testSampleOutput() {
+        XCTAssertEqual(Secrets.password, "hunter2")
+        XCTAssertEqual(Secrets.awsKey, "23478207027842073230762374023")
+        XCTAssertEqual(Secrets.base64Key, "qPOcU+FAScqoYY5XY/oFRylkVcmkHxN1kfepJ80lUfE=")
+    }
+
 
     static var allTests = [
         ("testBasicMaskAndUnmask", testBasicMaskAndUnmask),

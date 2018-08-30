@@ -27,7 +27,7 @@
 		OBJ_33 /* YarnError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* YarnError.swift */; };
 		OBJ_34 /* SecretsFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* SecretsFileGenerator.swift */; };
 		OBJ_35 /* SwiftSecretsFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* SwiftSecretsFileGenerator.swift */; };
-		OBJ_36 /* yarn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* yarn.swift */; };
+		OBJ_36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* main.swift */; };
 		OBJ_43 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_54 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XCTestManifests.swift */; };
 		OBJ_55 /* yarnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* yarnTests.swift */; };
@@ -57,7 +57,7 @@
 		OBJ_14 /* YarnError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarnError.swift; sourceTree = "<group>"; };
 		OBJ_15 /* SecretsFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsFileGenerator.swift; sourceTree = "<group>"; };
 		OBJ_16 /* SwiftSecretsFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSecretsFileGenerator.swift; sourceTree = "<group>"; };
-		OBJ_17 /* yarn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yarn.swift; sourceTree = "<group>"; };
+		OBJ_17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_20 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_21 /* yarnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yarnTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				OBJ_12 /* Models */,
 				OBJ_15 /* SecretsFileGenerator.swift */,
 				OBJ_16 /* SwiftSecretsFileGenerator.swift */,
-				OBJ_17 /* yarn.swift */,
+				OBJ_17 /* main.swift */,
 			);
 			name = yarn;
 			path = Sources/yarn;
@@ -251,7 +251,7 @@
 				OBJ_33 /* YarnError.swift in Sources */,
 				OBJ_34 /* SecretsFileGenerator.swift in Sources */,
 				OBJ_35 /* SwiftSecretsFileGenerator.swift in Sources */,
-				OBJ_36 /* yarn.swift in Sources */,
+				OBJ_36 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
