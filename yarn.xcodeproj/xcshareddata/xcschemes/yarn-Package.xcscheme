@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "yarn::yarnTests"
-               BuildableName = "yarnTests.xctest"
+               BuildableName = "yarn-tests.xctest"
                BlueprintName = "yarn-tests"
                ReferencedContainer = "container:yarn.xcodeproj">
             </BuildableReference>
