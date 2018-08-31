@@ -14,17 +14,13 @@ public final class DataMasker {
     public static func mask(key: String, data: Data) -> MaskedSecret {
         let keySpace = 256
 
-        var buffer = [UInt8](repeating: 0, count: keySpace)
-        _ = SecRandomCopyBytes(kSecRandomDefault, buffer.count, &buffer)
-
-        let maskKey = Data(bytes: buffer)
+        let maskKey = Data.random(length: keySpace)
         var allPositions: [Int] = []
         for i in 0..<keySpace {
             allPositions.append(i)
         }
 
-        _ = SecRandomCopyBytes(kSecRandomDefault, buffer.count, &buffer)
-        var unmaskedData = Data(bytes: buffer)
+        var unmaskedData = Data.random(length: keySpace)
         var keyPositions: [Int] = []
         for i in 0..<data.count {
             let position = allPositions.popRandom()

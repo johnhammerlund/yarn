@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		1B5B9FC02138B53F00003F79 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B9FBF2138B53F00003F79 /* main.swift */; };
 		1B5B9FC22138B54E00003F79 /* yarn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "yarn::yarn::Product" /* yarn.framework */; };
+		1B6C33822139A2BD00313103 /* Data+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C33812139A2BD00313103 /* Data+Random.swift */; };
 		OBJ_30 /* DataMasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DataMasker.swift */; };
 		OBJ_31 /* Array+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Array+Random.swift */; };
 		OBJ_32 /* MaskedSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MaskedSecret.swift */; };
@@ -31,7 +32,7 @@
 		OBJ_35 /* SwiftSecretsFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* SwiftSecretsFileGenerator.swift */; };
 		OBJ_43 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_54 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XCTestManifests.swift */; };
-		OBJ_55 /* yarnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* yarnTests.swift */; };
+		OBJ_55 /* DataMaskerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DataMaskerTests.swift */; };
 		OBJ_57 /* yarn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "yarn::yarn::Product" /* yarn.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,17 +68,18 @@
 /* Begin PBXFileReference section */
 		1B5B9FB72138B50500003F79 /* yarn-exec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "yarn-exec"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5B9FBF2138B53F00003F79 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1B6C33812139A2BD00313103 /* Data+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Random.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* Array+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Random.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* MaskedSecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedSecret.swift; sourceTree = "<group>"; };
 		OBJ_14 /* YarnError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarnError.swift; sourceTree = "<group>"; };
 		OBJ_15 /* SecretsFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsFileGenerator.swift; sourceTree = "<group>"; };
 		OBJ_16 /* SwiftSecretsFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSecretsFileGenerator.swift; sourceTree = "<group>"; };
 		OBJ_20 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_21 /* yarnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yarnTests.swift; sourceTree = "<group>"; };
+		OBJ_21 /* DataMaskerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMaskerTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* DataMasker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMasker.swift; sourceTree = "<group>"; };
 		"yarn::yarn::Product" /* yarn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = yarn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"yarn::yarnTests::Product" /* yarnTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = yarnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"yarn::yarnTests::Product" /* yarn-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "yarn-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_11 /* Array+Random.swift */,
+				1B6C33812139A2BD00313103 /* Data+Random.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -143,32 +146,32 @@
 		OBJ_18 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* yarnTests */,
+				OBJ_19 /* yarn-tests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_19 /* yarnTests */ = {
+		OBJ_19 /* yarn-tests */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_20 /* XCTestManifests.swift */,
-				OBJ_21 /* yarnTests.swift */,
+				OBJ_21 /* DataMaskerTests.swift */,
 			);
-			name = yarnTests;
-			path = Tests/yarnTests;
+			name = "yarn-tests";
+			path = "Tests/yarn-tests";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"yarn::yarnTests::Product" /* yarnTests.xctest */,
+				"yarn::yarnTests::Product" /* yarn-tests.xctest */,
 				"yarn::yarn::Product" /* yarn.framework */,
 				1B5B9FB72138B50500003F79 /* yarn-exec */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -177,7 +180,6 @@
 				OBJ_22 /* Products */,
 				1B5B9FC12138B54E00003F79 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -252,9 +254,9 @@
 			productReference = "yarn::yarn::Product" /* yarn.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"yarn::yarnTests" /* yarnTests */ = {
+		"yarn::yarnTests" /* yarn-tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "yarnTests" */;
+			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "yarn-tests" */;
 			buildPhases = (
 				OBJ_53 /* Sources */,
 				OBJ_56 /* Frameworks */,
@@ -264,9 +266,9 @@
 			dependencies = (
 				OBJ_58 /* PBXTargetDependency */,
 			);
-			name = yarnTests;
+			name = "yarn-tests";
 			productName = yarnTests;
-			productReference = "yarn::yarnTests::Product" /* yarnTests.xctest */;
+			productReference = "yarn::yarnTests::Product" /* yarn-tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +294,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,7 +302,7 @@
 				"yarn::yarn" /* yarn */,
 				"yarn::SwiftPMPackageDescription" /* yarnPackageDescription */,
 				"yarn::yarnPackageTests::ProductTarget" /* yarnPackageTests */,
-				"yarn::yarnTests" /* yarnTests */,
+				"yarn::yarnTests" /* yarn-tests */,
 				1B5B9FB62138B50500003F79 /* yarn-exec */,
 			);
 		};
@@ -323,6 +325,7 @@
 				OBJ_31 /* Array+Random.swift in Sources */,
 				OBJ_32 /* MaskedSecret.swift in Sources */,
 				OBJ_33 /* YarnError.swift in Sources */,
+				1B6C33822139A2BD00313103 /* Data+Random.swift in Sources */,
 				OBJ_34 /* SecretsFileGenerator.swift in Sources */,
 				OBJ_35 /* SwiftSecretsFileGenerator.swift in Sources */,
 			);
@@ -341,7 +344,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_54 /* XCTestManifests.swift in Sources */,
-				OBJ_55 /* yarnTests.swift in Sources */,
+				OBJ_55 /* DataMaskerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +353,7 @@
 /* Begin PBXTargetDependency section */
 		OBJ_48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "yarn::yarnTests" /* yarnTests */;
+			target = "yarn::yarnTests" /* yarn-tests */;
 			targetProxy = 1B5B9FA6213879D900003F79 /* PBXContainerItemProxy */;
 		};
 		OBJ_58 /* PBXTargetDependency */ = {
@@ -603,7 +606,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = yarnTests;
+				TARGET_NAME = "yarn-tests";
 			};
 			name = Debug;
 		};
@@ -622,7 +625,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = yarnTests;
+				TARGET_NAME = "yarn-tests";
 			};
 			name = Release;
 		};
@@ -674,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_50 /* Build configuration list for PBXNativeTarget "yarnTests" */ = {
+		OBJ_50 /* Build configuration list for PBXNativeTarget "yarn-tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_51 /* Debug */,

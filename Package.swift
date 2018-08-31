@@ -24,7 +24,7 @@ let package = Package(
             name: "yarn-exec",
             dependencies: ["yarn"]),
         .testTarget(
-            name: "yarnTests",
+            name: "yarn-tests",
             dependencies: ["yarn"]),
     ]
 )

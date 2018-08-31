@@ -34,7 +34,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "yarn::yarnTests"
                BuildableName = "yarnTests.xctest"
-               BlueprintName = "yarnTests"
+               BlueprintName = "yarn-tests"
                ReferencedContainer = "container:yarn.xcodeproj">
             </BuildableReference>
          </TestableReference>
