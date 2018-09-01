@@ -71,7 +71,6 @@
 		1B5B9FBF2138B53F00003F79 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1B6C33812139A2BD00313103 /* Data+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Random.swift"; sourceTree = "<group>"; };
 		1B6C33832139A63900313103 /* SwiftSecretsFileGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSecretsFileGeneratorTests.swift; sourceTree = "<group>"; };
-		1B6C33852139A85600313103 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		OBJ_11 /* Array+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Random.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* MaskedSecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedSecret.swift; sourceTree = "<group>"; };
 		OBJ_14 /* YarnError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarnError.swift; sourceTree = "<group>"; };
@@ -178,7 +177,6 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				1B6C33852139A85600313103 /* Secrets.plist */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_18 /* Tests */,
